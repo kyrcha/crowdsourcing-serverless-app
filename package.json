@@ -3,9 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "mongoose": "^5.9.16",
     "react": "^16.6.1",
+    "react-bootstrap": "^1.0.1",
+    "react-device-detect": "^1.12.1",
     "react-dom": "^16.6.1",
-    "react-scripts": "2.1.1"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "2.1.1",
+    "react-spinners": "^0.8.3"
   },
   "scripts": {
     "dev": "BROWSER=none react-scripts start",

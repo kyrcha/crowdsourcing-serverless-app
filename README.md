@@ -1,29 +1,12 @@
-![React Logo](https://github.com/vercel/vercel/blob/master/packages/frameworks/logos/react.svg)
+One time:
 
-# React Example
+- Run `now` to link the project
+- Run `now dev` to develop locally
 
-This directory is a brief example of a [React](https://reactjs.org/) app with [Serverless Functions](https://vercel.com/docs/v2/serverless-functions/introduction) that can be deployed with Vercel and zero configuration.
+Dump remote DB to local:
 
-## Deploy Your Own
+`mongodump -h ds249873.mlab.com:49873 -d calistacrowdsourcing -u <user> -p <password> -o <output directory>`
 
-Deploy your own React project, along with Serverless Functions, with Vercel.
+Resotre dumped DB to localhost DB:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/vercel/tree/master/examples/create-react-app-functions)
-
-_Live Example: https://create-react-app.now-examples.now.sh/_
-
-### How We Created This Example
-
-To get started with React, along with [Serverless Functions](https://vercel.com/docs/v2/serverless-functions/introduction), with Vercel, you can use the [Create-React-App CLI](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) to initialize the project:
-
-```shell
-$ npx create-react-app my-app
-```
-
-### Deploying From Your Terminal
-
-You can deploy your new React project, along with [Serverless Functions](https://vercel.com/docs/v2/serverless-functions/introduction), with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
-
-```shell
-$ vercel
-```
+`mongorestore -h localhost:27917 -d calistacrowdsourcing db/backup-30-05-2020/calistacrowdsourcing`
