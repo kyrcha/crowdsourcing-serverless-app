@@ -4,7 +4,8 @@ import ImageContainer from "./ImageContainer.js";
 import CountdownTimer from "./CountdownTimer.js";
 import ProgressBar from "./ProgressBar.js";
 import API from "../api.js";
-import GridLoader from "react-spinners/GridLoader";
+import Header from './Header.js'
+import LoadingDisplay from './LoadingDisplay.js'
 
 class VotingProcess extends Component {
   constructor() {
@@ -139,10 +140,11 @@ class VotingProcess extends Component {
     if (this.state.votingCompleted) {
       return <Redirect push to="/ending" />;
     } else if (this.state._id === "") {
-      return <GridLoader size={96} color={"grey"} />;
+      return <LoadingDisplay />;
     } else {
       return (
         <div>
+          <Header text="Which design is more attractive?" logoDisplay={false} />
           <ProgressBar
             votingRound={this.state.votingRound}
             totalVotingRounds={this.props.totalVotingRounds}
