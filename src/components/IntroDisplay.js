@@ -45,7 +45,7 @@ class IntroDisplay extends Component {
         <div className="device_orientation_message">
           <h3>Please rotate your device and stay in landscape position
             for the rest of the voting session.</h3>
-          <img src={rotateDeviceGif} alt="rotateDeviceInstruction"/>
+          <img src={rotateDeviceGif} alt="rotateDeviceInstruction" />
         </div>
       )
 
@@ -67,7 +67,7 @@ class IntroDisplay extends Component {
             <div className="intro">
               <h4>What is this about?</h4>
               <p>You are about to take a test concerning webpage visual preferences.
-                Your contribution to our research allows us to learn more about webpage aesthetics.
+              Your contribution to our research allows us to learn more about webpage aesthetics.
                 The purpose of this platform is to collect sufficient data to fulfil our goal.</p>
 
               <h4>What will you have to do?</h4>
@@ -79,7 +79,7 @@ class IntroDisplay extends Component {
                 have <span style={keyPointStyle}>approximately {votingTime} seconds</span>.
                 You can take a look at the following example.</p>
               <div className="demo">
-                <img src={demoGif} alt="example"/>
+                <img src={demoGif} alt="example" />
               </div>
               <h4>Privacy and Data Collection</h4>
               <p>We will not ask you any personal information, so your anonymity is ensured.
@@ -87,7 +87,7 @@ class IntroDisplay extends Component {
 
               <h4>Contact information</h4>
               <p>For bug reports or any other information,
-                you may contact us at adelitzas@ece.auth.gr.</p>
+                you may contact us at alex.delitzas@gmail.com or kyrcha@gmail.com.</p>
 
               <br />
               <div className="button-to-start">
