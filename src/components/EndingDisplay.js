@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Header from './Header.js'
+import React from "react";
+import { Link } from "react-router-dom";
+import Header from "./Header.js";
 
-import '../styles/EndingDisplay.css'
+import "../styles/EndingDisplay.css";
 
 function EndingDisplay() {
   return (
@@ -11,21 +11,23 @@ function EndingDisplay() {
 
       <div className="outro">
         <h4>Thank you for participating in our research.</h4>
-        <p>We appreciate your help! For bug reports or any other information,
-        you may contact us at adelitzas@ece.auth.gr.</p>
+        <p>
+          We appreciate your help! For bug reports or any other information, you
+          may contact us at at alex.delitzas@gmail.com or kyrcha@gmail.com.
+        </p>
         <h4>If you want to repeat the test, click the button below.</h4>
 
         <br />
         <div className="button-to-start">
           <Link to="/voting">
-            <button type="button"><span>{"Start again!"}</span></button>
+            <button type="button">
+              <span>{"Start again!"}</span>
+            </button>
           </Link>
         </div>
       </div>
-
     </div>
-  )
+  );
 }
 
-
-export default EndingDisplay
+export default EndingDisplay;
